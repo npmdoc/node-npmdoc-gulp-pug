@@ -1,9 +1,14 @@
-# api documentation for  [gulp-pug (v3.3.0)](https://github.com/pugjs/gulp-pug#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-pug.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-pug) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-pug.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-pug)
+# npmdoc-gulp-pug
+
+#### api documentation for  [gulp-pug (v3.3.0)](https://github.com/pugjs/gulp-pug#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-pug.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-pug) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-pug.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-pug)
+
 #### Gulp plugin for compiling Pug templates
 
-[![NPM](https://nodei.co/npm/gulp-pug.png?downloads=true)](https://www.npmjs.com/package/gulp-pug)
+[![NPM](https://nodei.co/npm/gulp-pug.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-pug)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-pug_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-pug/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-pug/build/screenCapture.npmPackageListing.svg)
 
@@ -21,12 +26,10 @@
     },
     "contributors": [
         {
-            "name": "Blaine Bublitz",
-            "email": "blaine@iceddev.com"
+            "name": "Blaine Bublitz"
         },
         {
             "name": "Jamen Marzonie",
-            "email": "jamenmarz@gmail.com",
             "url": "http://jamenmarz.com"
         }
     ],
@@ -68,21 +71,17 @@
     "license": "MIT",
     "maintainers": [
         {
-            "name": "forbeslindesay",
-            "email": "forbes@lindesay.co.uk"
+            "name": "forbeslindesay"
         },
         {
-            "name": "jamen",
-            "email": "jamenmarz+npm@gmail.com"
+            "name": "jamen"
         },
         {
-            "name": "phated",
-            "email": "blaine.bublitz@gmail.com"
+            "name": "phated"
         }
     ],
     "name": "gulp-pug",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/pugjs/gulp-pug.git"
@@ -93,16 +92,6 @@
     "version": "3.3.0"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-pug](#apidoc.module.gulp-pug)
-
-
-
-# <a name="apidoc.module.gulp-pug"></a>[module gulp-pug](#apidoc.module.gulp-pug)
 
 
 
