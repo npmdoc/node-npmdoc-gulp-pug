@@ -61,12 +61,124 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-pug">module gulp-pug</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-pug.gulp-pug">
+            function <span class="apidocSignatureSpan"></span>gulp-pug
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-pug.toString">
+            function <span class="apidocSignatureSpan">gulp-pug.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-pug.toString">module gulp-pug.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-pug.toString.toString">
+            function <span class="apidocSignatureSpan">gulp-pug.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-pug" id="apidoc.module.gulp-pug">module gulp-pug</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-pug.gulp-pug" id="apidoc.element.gulp-pug.gulp-pug">
+        function <span class="apidocSignatureSpan"></span>gulp-pug
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gulpPug(options) {
+  var opts = objectAssign({}, options);
+  var pug = opts.pug || opts.jade || defaultPug;
+
+  opts.data = objectAssign(opts.data || {}, opts.locals || {});
+
+  return through.obj(function compilePug(file, enc, cb) {
+    var data = objectAssign({}, opts.data, file.data || {});
+
+    opts.filename = file.path;
+    file.path = ext(file.path, opts.client ? &#x27;.js&#x27; : &#x27;.html&#x27;);
+
+    if (file.isStream()) {
+      return cb(new PluginError(&#x27;gulp-pug&#x27;, &#x27;Streaming not supported&#x27;));
+    }
+
+    if (file.isBuffer()) {
+      try {
+        var compiled;
+        var contents = String(file.contents);
+        if (opts.verbose === true) {
+          log(&#x27;compiling file&#x27;, file.path);
+        }
+        if (opts.client) {
+          compiled = pug.compileClient(contents, opts);
+        } else {
+          compiled = pug.compile(contents, opts)(data);
+        }
+        file.contents = new Buffer(compiled);
+      } catch (e) {
+        return cb(new PluginError(&#x27;gulp-pug&#x27;, e));
+      }
+    }
+    cb(null, file);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-pug.toString" id="apidoc.element.gulp-pug.toString">
+        function <span class="apidocSignatureSpan">gulp-pug.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-pug.toString" id="apidoc.module.gulp-pug.toString">module gulp-pug.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-pug.toString.toString" id="apidoc.element.gulp-pug.toString.toString">
+        function <span class="apidocSignatureSpan">gulp-pug.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
