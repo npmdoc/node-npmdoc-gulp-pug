@@ -1,6 +1,6 @@
 # npmdoc-gulp-pug
 
-#### api documentation for  [gulp-pug (v3.3.0)](https://github.com/pugjs/gulp-pug#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-pug.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-pug) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-pug.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-pug)
+#### basic api documentation for  [gulp-pug (v3.3.0)](https://github.com/pugjs/gulp-pug#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-pug.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-pug) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-pug.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-pug)
 
 #### Gulp plugin for compiling Pug templates
 
@@ -89,7 +89,8 @@
     "scripts": {
         "test": "gulp eslint && tap ./test"
     },
-    "version": "3.3.0"
+    "version": "3.3.0",
+    "bin": {}
 }
 ```
 
